@@ -1,0 +1,23 @@
+// ====================================
+// フォントなど全体的なスタイルシート 
+// @link https://qiita.com/ritukiii/items/67b3c50002b48c6186d6
+// ====================================
+
+
+
+
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    // font-family: -apple-system, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    background-color: aqua;
+    font-feature-settings: "palt"; /* プロポーショナルメトリクスを有効に */
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+  }
