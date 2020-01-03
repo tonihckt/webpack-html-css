@@ -37,6 +37,25 @@
 
     <h1>kk</h1>
     <i class="fab fa-twitter-square"></i>
+
+    <button onclick="revelarMessage()">Click me!</button>
+    <p id="hiddenMessage" style="display:none">You are going on cruise</p>
+
+    
    <!-- <script type="text/javascript" src="scripts/bundle.js"></script> -->
+    <script type="text/javascript">
+      function revelarMessage(){
+        document.getElementById("hiddenMessage").style.display = block;
+      } 
+      function countDown(){
+        let currentVal = document.getElementById("countDownButton").innerHTML;
+        let newVal = 0;
+        if (currentVal > 0){
+          newVal = currentVal - 1;
+        }
+        document.getElementById("countDownButton").innerHTML = newVal;
+      }
+    </script>
+
   </body>
 </html>

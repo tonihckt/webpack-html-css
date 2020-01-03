@@ -1,6 +1,6 @@
 // Add Scripts ---------------
 // ---------------------------
-// import $ from "jquery";
+import "jquery";
 
 // Add Scripts ---------------
 // ---------------------------
@@ -28,10 +28,6 @@ import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
-
-// import handlebars from "handlebars-inline-precompile";
-// import * as Handlebars from 'handlebars'
-
 
 // $(window).on('load', () => {
 //     $('#app').html('<h1>We are ready!</h1>')

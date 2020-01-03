@@ -27,7 +27,7 @@ module.exports = {
   output: {
     // path: path.resolve(__dirname, 'build'),
     path: BUILD_DIR,
-    filename: 'scripts/bundle.js',
+    filename: 'assets/scripts/bundle.js',
     // filename: 'scripts/[name].js',
     // chunkFilename: 'scripts/[id].[chunkhash].js'
   },
@@ -168,7 +168,7 @@ module.exports = {
             options: {
               // name: '[name]-[hash].[ext]',
               name: '[name].[ext]', 
-              outputPath: 'fonts/',
+              outputPath: 'assets/fonts/',
               prefix: "font", 
               limit: 10000, 
             }
@@ -182,11 +182,11 @@ module.exports = {
         test: /\.(gif|png|jpe?g|svg|jpg|png|bmp|svgz)$/,
         loader: 'file-loader', 
         options: {
-          outputPath: 'images/',
+          outputPath: 'assets/images/',
           name: '[name]-[hash].[ext]',
           // limit: 90000,
           limit: 10 * 1024,
-          // useRelativePath: true,
+          useRelativePath: true,
         },
         // include: path.join(__dirname, 'src'),
       },
@@ -196,7 +196,7 @@ module.exports = {
         test: /\.(webm|mp4)$/,
         loader: 'file-loader', 
         options: {
-          outputPath: 'videos/',
+          outputPath: 'assets/videos/',
           name: '[name]-[hash].[ext]',
         },
         // include: path.join(__dirname, 'src'),
@@ -210,14 +210,14 @@ module.exports = {
     // // Extraer css
     new MiniCssExtractPlugin({ 
       path: path.resolve(__dirname, 'build'),
-      filename: 'styles/main.css',
+      filename: 'assets/styles/main.css',
       // filename: "[name] -styles.css",
       // chunkFilename: 'styles/[id].css'
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'src/images/'),
-        to: path.resolve(__dirname, 'build/images/'),
+        from: path.resolve(__dirname, 'src/assets/images/'),
+        to: path.resolve(__dirname, 'build/assets/images/'),
       },
     ]),
     new ImageminPlugin({
@@ -244,8 +244,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({ // Also generate a test.html
       // title: 'Home template',
-      template: path.resolve(__dirname, './src/home.html'),
-      filename: "home.html",
+      template: path.resolve(__dirname, './src/test.html'),
+      filename: "test.html",
       inject: true,
       minify: {
         removeComments: true,

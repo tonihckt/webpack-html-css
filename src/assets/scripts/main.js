@@ -24,8 +24,8 @@ import { a } from './test-helpers/test'
 // }
 
 //JS Vanilla
-document.getElementById('btn-alert')
-    .addEventListener('click',showAlert)
+// document.getElementById('btn-alert')
+//     .addEventListener('click',showAlert)
 
 
 // // jQuery
