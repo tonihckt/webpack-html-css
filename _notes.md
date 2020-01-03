@@ -2,6 +2,9 @@
       https://desarrolloweb.com/articulos/primeros-pasos-webpack.html
       https://dev.to/mariorodeghiero/multiple-html-files-with-htmlwebpackplugin-19bf
       
+      https://www.npmjs.com/package/lodash-template-webpack-loader#template-settings
+
+      https://www.youtube.com/watch?v=2stxP_mI9bc
       // -----------  Add-fonts file-loader  -----------------------
       // -----------------------------------------------------
       // {

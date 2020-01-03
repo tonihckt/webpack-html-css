@@ -1,10 +1,14 @@
 // Add Scripts ---------------
 // ---------------------------
-import './scripts/main.js';
+// import $ from "jquery";
+
+// Add Scripts ---------------
+// ---------------------------
+import './assets/scripts/main.js';
 
 // Add Styles -----------------
 // ----------------------------
-import './styles/main.scss';
+import './assets/styles/main.scss';
 
 // if(process.env.NODE_ENV !== 'production'){
 //   console.log('development mode!')

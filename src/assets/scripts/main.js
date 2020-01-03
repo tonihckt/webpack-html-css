@@ -10,9 +10,9 @@ import { v4 } from "uuid";
 // // Imports Others ---------------
 // // ------------------------------
 import {showAlert} from './test-helpers/messages';
-import * as Dog from './test-helpers/dog.js';
-import * as Addition from './test-helpers/addition.js';
-import { a } from './test-helpers/test.js'
+import * as Dog from './test-helpers/dog';
+import * as Addition from './test-helpers/addition';
+import { a } from './test-helpers/test'
 
 // import printMe from "./print.js"; // unused
 // import { cube } from './math.js';

@@ -94,6 +94,7 @@ module.exports = {
       // -----------------------------------------------------
       {
         test: /\.html$/,
+        // exclude: /(node_modules|bower_components)/,
         use: [
           { 
             loader: 'html-loader',
@@ -110,6 +111,7 @@ module.exports = {
       // -----------------------------------------------------
       {
         test: /\.(sa|sc|c)ss$/,
+        // test: /\.(scss|css)$/
         use: [
           {
             // Adds CSS to the DOM by injecting a `<style>` tag
@@ -173,7 +175,7 @@ module.exports = {
           }
         ],
         // include: path.join(__dirname, 'src')
-      },
+      },     
       // -------------- IMAGES: url-loader -------------------
       // -----------------------------------------------------
       {
@@ -184,6 +186,7 @@ module.exports = {
           name: '[name]-[hash].[ext]',
           // limit: 90000,
           limit: 10 * 1024,
+          // useRelativePath: true,
         },
         // include: path.join(__dirname, 'src'),
       },
@@ -254,7 +257,10 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      Popper: 'popper.js'
+      Popper: 'popper.js',
+      // 'window.$': 'jquery',
+      // 'window.jQuery': 'jquery',
+      // Waves: 'node-waves',
     }),
   ],
   optimization: {
@@ -268,7 +274,7 @@ module.exports = {
       }),
     ],
   },
-  // resolve: {
-  //   extensions: ['*', '.js', '.jsx','.scss']
-  // },
+  resolve: {
+    extensions: ['*', '.js', '.jsx','.scss']
+  },
 }
